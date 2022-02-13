@@ -53,7 +53,7 @@ couponController.checkDiscount =async (request,response)=>{
                  }
                 
              }else if(coupon[0].typeOfDiscount == 'percentage'&& discountRequestedDetails.cartValue >= coupon[0].min_Cart_Value){
-                 console.log(" i am here")
+                
                  let calculation = discountRequestedDetails.cartValue * (100 - coupon[0].percentage) /100
                  if(calculation > coupon[0].max_Discount){
                      couponDiscountAmount = coupon[0].max_Discount

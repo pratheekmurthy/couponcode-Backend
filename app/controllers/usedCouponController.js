@@ -19,7 +19,7 @@ usedCouponController.create =async (request,response)=>{
         //     discountValue : usedCouponsReceiveddetails.discountValue
         // }
 
-        console.log("i am here",usedcoupon)
+        
         let createdusedCoupon = await UsedCoupon.create({couponID : "1"})
 
         response.send({msg: "Successfull ",data: createdusedCoupon})
