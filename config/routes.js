@@ -5,15 +5,14 @@ const usedCouponController = require('../app/controllers/usedCouponController')
 
 
 
-router.post('/api/coupon/createCoupon',couponController.createCoupon)
-router.get('/api/coupon/getAllCoupons',couponController.list)
-router.post('/api/coupon/useCoupon',usedCouponController.create)
-router.get('/api/coupon/getAllusedCoupons',usedCouponController.list)
-router.post('/api/coupon/checkDiscount',couponController.checkDiscount)
+router.post('/coupon/createCoupon',couponController.createCoupon)
+router.get('/coupon/getAllCoupons',couponController.list)
+router.post('/coupon/useCoupon',usedCouponController.create)
+router.get('/coupon/getAllusedCoupons',usedCouponController.list)
+router.post('/coupon/checkDiscount',couponController.checkDiscount)
 
 
-
-router.get('/api/',(req,res)=>{
+router.get('/',(req,res)=>{
     res.json("default values")
 })
 
