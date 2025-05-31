@@ -13,7 +13,7 @@ app.use(cors({
 
 configureDB()
 const router = require('./config/routes')
-app.use(router)
+app.use('/api', router)
 
 const port = 3076
 
